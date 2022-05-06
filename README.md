@@ -1,6 +1,6 @@
 # super-rentals
 
-Ember.js Super Rentals official tutorial updated with Playwright Test Framework and rebranded into Magic Castles
+Ember.js Super Rentals official tutorial updated with Playwright Test Framework and lovingly renamed into Magic Castles
 
 
 # is now Magic Castles
