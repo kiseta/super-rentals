@@ -76,3 +76,39 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Useful commands
+
+### To start the app server
+```
+ember server
+```
+### To statrt QUnit Ember test server
+
+```
+ember test server
+```
+or
+```
+ember t -s
+```
+
+### To run tests using ember-play (Playwright test runner for ember)
+- install following instrctions here: https://emberobserver.com/addons/ember-play
+```
+ember play -f
+```
+
+### to run Playwright test (spec) headless by default
+```
+npx playwright test 
+```
+or
+```
+npx playwright test --headed
+```
+or
+```
+npx playwright test --headed --reporter=html
+
+```
