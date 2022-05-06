@@ -1,13 +1,15 @@
 # super-rentals
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Ember.js Super Rentals official tutorial updated with Playwright Test Framework and rebranded into Magic Castles
+
 
 # is now Magic Castles
 
 * Added: Playwright Test Framework
 * SuperRentals renamed into MagicCastles
 * Mascot Hamster(?) Tomster is now Eddie (cute vegetarian vampire) #teamedward
+
+![Screenshot](magic-castles-screenshot.png)
 
 ## Prerequisites
 
