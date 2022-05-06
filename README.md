@@ -51,6 +51,8 @@ Run the following command in CLI Terminal
 ```
 npx playwright test "example.spec.js" --headed --reporter=html
 ```
+![Screenshot](playwright-test-report01-screenshot.png)
+![Screenshot](playwright-test-report02-screenshot.png)
 
 ### Linting
 
