@@ -47,7 +47,6 @@ module('Integration | Component | map', function (hooks) {
       'the src should include the escaped access token'
     );
   });
-
   test('it updates the `src` attribute when the arguments change', async function (assert) {
     this.setProperties({
       lat: 37.7749,

@@ -7,8 +7,8 @@ module('Unit | Model | rental', function (hooks) {
   test('it has the right type', function (assert) {
     let store = this.owner.lookup('service:store');
     let rental = store.createRecord('rental', {
-      id: 'grand-old-mansion',
-      title: 'Grand Old Mansion',
+      id: 'grand-old-fortress',
+      title: 'Grand Old Fortress',
       owner: 'Veruca Salt',
       city: 'San Francisco',
       location: {
@@ -20,7 +20,7 @@ module('Unit | Model | rental', function (hooks) {
       image:
         'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg',
       description:
-        'This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests.',
+        'This grand old fortress sits on over 100 acres of rolling hills and dense redwood forests.',
     });
 
     assert.strictEqual(rental.type, 'Standalone');

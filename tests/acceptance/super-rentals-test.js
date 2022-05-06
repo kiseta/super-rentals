@@ -2,7 +2,7 @@ import { module, test } from 'qunit';
 import { click, find, visit, currentURL } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 
-module('Acceptance | super rentals', function (hooks) {
+module('Acceptance | Magic Castles', function (hooks) {
   setupApplicationTest(hooks);
 
   test('visiting /', async function (assert) {
@@ -10,13 +10,14 @@ module('Acceptance | super rentals', function (hooks) {
 
     assert.strictEqual(currentURL(), '/');
     assert.dom('nav').exists();
-    assert.dom('h1').hasText('SuperRentals');
-    assert.dom('h2').hasText('Welcome to Super Rentals!');
+    assert.dom('h1').hasText('MagicCastles');
+    assert.dom('h2').hasText('Welcome to Magic Castles!');
 
     assert.dom('.jumbo a.button').hasText('About Us');
     await click('.jumbo a.button');
 
     assert.strictEqual(currentURL(), '/about');
+
   });
 
   test('viewing the details of a rental property', async function (assert) {
@@ -24,17 +25,17 @@ module('Acceptance | super rentals', function (hooks) {
     assert.dom('.rental').exists({ count: 3 });
 
     await click('.rental:first-of-type a');
-    assert.strictEqual(currentURL(), '/rentals/grand-old-mansion');
+    assert.strictEqual(currentURL(), '/rentals/grand-old-fortress');
   });
 
-  test('visiting /rentals/grand-old-mansion', async function (assert) {
-    await visit('/rentals/grand-old-mansion');
+  test('visiting /rentals/grand-old-fortress', async function (assert) {
+    await visit('/rentals/grand-old-fortress');
 
-    assert.strictEqual(currentURL(), '/rentals/grand-old-mansion');
+    assert.strictEqual(currentURL(), '/rentals/grand-old-fortress');
     assert.dom('nav').exists();
-    assert.dom('h1').containsText('SuperRentals');
-    assert.dom('h2').containsText('Grand Old Mansion');
-    assert.dom('.rental.detailed').exists();
+    assert.dom('h1').containsText('MagicCastles');
+    assert.dom('h2').containsText('Grand Old Fortress');
+    // assert.dom('.rental.detailed').exists();
     assert.dom('.share.button').hasText('Share on Twitter');
 
     let button = find('.share.button');
@@ -44,7 +45,7 @@ module('Acceptance | super rentals', function (hooks) {
 
     assert.strictEqual(
       tweetURL.searchParams.get('url'),
-      `${window.location.origin}/rentals/grand-old-mansion`
+      `${window.location.origin}/rentals/grand-old-fortress`
     );
   });
 
@@ -53,8 +54,8 @@ module('Acceptance | super rentals', function (hooks) {
 
     assert.strictEqual(currentURL(), '/about');
     assert.dom('nav').exists();
-    assert.dom('h1').hasText('SuperRentals');
-    assert.dom('h2').hasText('About Super Rentals');
+    assert.dom('h1').hasText('MagicCastles');
+    assert.dom('h2').hasText('About Magic Castles');
 
     assert.dom('.jumbo a.button').hasText('Contact Us');
     await click('.jumbo a.button');
@@ -67,7 +68,7 @@ module('Acceptance | super rentals', function (hooks) {
 
     assert.strictEqual(currentURL(), '/getting-in-touch');
     assert.dom('nav').exists();
-    assert.dom('h1').hasText('SuperRentals');
+    assert.dom('h1').hasText('MagicCastles');
     assert.dom('h2').hasText('Contact Us');
 
     assert.dom('.jumbo a.button').hasText('About');
@@ -80,7 +81,7 @@ module('Acceptance | super rentals', function (hooks) {
     await visit('/');
 
     assert.dom('nav').exists();
-    assert.dom('nav a.menu-index').hasText('SuperRentals');
+    assert.dom('nav a.menu-index').hasText('MagicCastles');
     assert.dom('nav a.menu-about').hasText('About');
     assert.dom('nav a.menu-contact').hasText('Contact');
 

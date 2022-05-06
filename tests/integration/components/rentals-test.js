@@ -10,8 +10,8 @@ module('Integration | Component | rentals', function (hooks) {
     this.setProperties({
       rentals: [
         {
-          id: 'grand-old-mansion',
-          title: 'Grand Old Mansion',
+          id: 'grand-old-fortress',
+          title: 'Grand Old Fortress',
           owner: 'Veruca Salt',
           city: 'San Francisco',
           location: {
@@ -22,13 +22,13 @@ module('Integration | Component | rentals', function (hooks) {
           type: 'Standalone',
           bedrooms: 15,
           image:
-            'https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg',
+            'https://images.pexels.com/photos/1590882/pexels-photo-1590882.jpeg',
           description:
-            'This grand old mansion sits on over 100 acres of rolling hills and dense redwood forests.',
+            'This grand old fortress sits on over 100 acres of rolling hills and dense redwood forests.',
         },
         {
-          id: 'urban-living',
-          title: 'Urban Living',
+          id: 'urban-stronghold',
+          title: 'Urban Stronghold',
           owner: 'Mike Teavee',
           city: 'Seattle',
           location: {
@@ -39,13 +39,13 @@ module('Integration | Component | rentals', function (hooks) {
           type: 'Community',
           bedrooms: 1,
           image:
-            'https://upload.wikimedia.org/wikipedia/commons/2/20/Seattle_-_Barnes_and_Bell_Buildings.jpg',
+            'https://upload.wikimedia.org/wikipedia/commons/2/20/Hunyad_Castle_TB1.jpg',
           description:
             'A commuters dream. This rental is within walking distance of 2 bus stops and the Metro.',
         },
         {
-          id: 'downtown-charm',
-          title: 'Downtown Charm',
+          id: 'downtown-citadel',
+          title: 'Downtown Citadel',
           owner: 'Violet Beauregarde',
           city: 'Portland',
           location: {
@@ -56,7 +56,7 @@ module('Integration | Component | rentals', function (hooks) {
           type: 'Community',
           bedrooms: 3,
           image:
-            'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg',
+            'https://upload.wikimedia.org/wikipedia/commons/a/ae/Castle_Neuschwanstein.jpg',
           description:
             'Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet.',
         },
@@ -75,15 +75,15 @@ module('Integration | Component | rentals', function (hooks) {
 
     assert
       .dom('.rentals .results li:nth-of-type(1)')
-      .containsText('Grand Old Mansion');
+      .containsText('Grand Old Fortress');
 
     assert
       .dom('.rentals .results li:nth-of-type(2)')
-      .containsText('Urban Living');
+      .containsText('Urban Stronghold');
 
     assert
       .dom('.rentals .results li:nth-of-type(3)')
-      .containsText('Downtown Charm');
+      .containsText('Downtown Citadel');
   });
 
   test('it updates the results according to the search query', async function (assert) {
@@ -96,12 +96,12 @@ module('Integration | Component | rentals', function (hooks) {
 
     assert.dom('.rentals .results').exists();
     assert.dom('.rentals .results li').exists({ count: 1 });
-    assert.dom('.rentals .results li').containsText('Downtown Charm');
+    assert.dom('.rentals .results li').containsText('Downtown Citadel');
 
-    await fillIn('.rentals input', 'Mansion');
+    await fillIn('.rentals input', 'Fortress');
 
     assert.dom('.rentals .results').exists();
     assert.dom('.rentals .results li').exists({ count: 1 });
-    assert.dom('.rentals .results li').containsText('Grand Old Mansion');
+    assert.dom('.rentals .results li').containsText('Grand Old Fortress');
   });
 });

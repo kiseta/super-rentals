@@ -20,7 +20,7 @@ module('Integration | Component | share-button', function (hooks) {
 
   hooks.beforeEach(function () {
     this.owner.register('service:router', MockRouterService);
-
+    
     this.tweetParam = (param) => {
       let link = find('a');
       let url = new URL(link.href);

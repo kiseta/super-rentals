@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "rentals",
+    "id": "grand-old-fortress",
+    "attributes": {
+      "title": "Grand Old Fortress",
+      "owner": "Veruca Salt",
+      "city": "San Francisco",
+      "location": {
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      "category": "Estate",
+      "bedrooms": 15,
+      "image": "https://images.pexels.com/photos/1590882/pexels-photo-1590882.jpeg",
+      "description": "This grand old fortress sits on over 100 acres of rolling hills and dense redwood forests."
+    }
+  }
+}

@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Arizonia:300,300italic,400,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes:300,300italic,400,700,700italic);
 
 /**
  * Base Elements
@@ -10,12 +12,16 @@
 }
 
 body,
-h1,
-h2,
+h2 {
+  font-family: 'Arizonia', serif;
+  line-height: 1.5;
+  letter-spacing: 2pt;
+}
 h3,
 h4,
 h5,
 h6,
+h1,
 p,
 div,
 span,
@@ -23,14 +29,15 @@ a,
 button {
   font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  letter-spacing: normal;
 }
 
 body {
-  background: #f3f3f3;
+  background: #eaf2f7;
 }
 
 a {
-  color: #016aba;
+  color: #ed485f;
   text-decoration: none;
 }
 
@@ -51,7 +58,7 @@ p {
   padding: 10px 30px 10px;
   text-decoration: none;
   color: #fff;
-  background: #016aba;
+  background: #ed485f;
   border-radius: 5px;
   border: none;
   font-size: 20px;
@@ -81,7 +88,7 @@ p {
   height: 4em;
   background-color: #677ae4;
   background-color: #05526A;
-  background-color: #e46855;
+  background-color: #543284;
 }
 
 .menu h1 {
@@ -195,11 +202,11 @@ p {
 
 .jumbo {
   padding: 50px;
-  background: #f6f6f6;
+  background: #cadcf2;
 }
 
 .jumbo:hover {
-  background-color: #f3f3f3;
+  background-color: #bdd4f1;
 }
 
 .jumbo h2 {
@@ -271,7 +278,7 @@ p {
   margin: -20px;
   padding: 20px;
   border-radius: 5px;
-  background: #016aba;
+  background: #084b9d;
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
 }
@@ -294,7 +301,7 @@ p {
   margin-top: 5px;
   margin-bottom: -15px;
   text-align: center;
-  color: #016aba;
+  color: #ed485f;
 
   /* This is needed to fix a safari clipping issue */
   position: relative;
@@ -448,15 +455,19 @@ p {
 }
 
 .tomster {
-  background: url(../assets/images/teaching-tomster.png);
+  background: url(../assets/images/welcome-eddie-head-red.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 200px;
-  width: 200px;
-
+  width: 160px;
   position: relative;
   top: -25px;
 }
+
+/* .tomster:hover {
+  background: url(../assets/images/welcome-eddie.png);
+  background-size: cover;
+} */
 
 .screen-reader{
   position: absolute;
