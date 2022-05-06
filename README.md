@@ -94,21 +94,20 @@ ember t -s
 ```
 
 ### To run tests using ember-play (Playwright test runner for ember)
-- install following instrctions here: https://emberobserver.com/addons/ember-play
+- install following instructions here: https://emberobserver.com/addons/ember-play
 ```
 ember play -f
 ```
 
-### to run Playwright test (spec) headless by default
+### to run Playwright test, runs headless by default
 ```
 npx playwright test 
 ```
-or
+or headed
 ```
 npx playwright test --headed
 ```
-or
+or headed with nicely formatted html report
 ```
 npx playwright test --headed --reporter=html
-
 ```
