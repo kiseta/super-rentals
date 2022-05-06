@@ -7,6 +7,11 @@
 This is a working repository for the Super Rentals tutorial,
 which you can check out at https://guides.emberjs.com/release/tutorial/.
 
+## Updates
+* Playwright Test Framework
+* Renamed into Magic Castles
+* Tomster is now Eddie (cute vegetarian vampire) #teamedward
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
