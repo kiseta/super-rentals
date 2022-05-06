@@ -3,7 +3,7 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
-# Updates
+# is now Magic Castles
 
 * Added: Playwright Test Framework
 * SuperRentals renamed into MagicCastles
@@ -31,6 +31,7 @@ You will need the following things properly installed on your computer.
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 
+
 ### Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
@@ -39,6 +40,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember test`
 * `ember test --server`
+
+## Running Playwright Tests
+
+Run the following command in CLI Terminal
+**--headed** parameter is added to see tests executed, to run in headless mode (Playwright default) remove this from the command below.
+
+```
+npx playwright test "example.spec.js" --headed --reporter=html
+```
 
 ### Linting
 

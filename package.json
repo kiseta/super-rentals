@@ -1,8 +1,8 @@
 {
-  "name": "super-rentals",
+  "name": "magic-castles",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for super-rentals goes here",
+  "description": "Ember.js Super Rentals official tutorial updated with Playwright Test Framework and renamed into Magic Castles",
   "repository": "",
   "license": "MIT",
   "author": "",
@@ -27,6 +27,7 @@
     "@ember/test-helpers": "^2.6.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
+    "@playwright/test": "^1.21.1",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.4.1",
