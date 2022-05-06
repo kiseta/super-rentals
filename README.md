@@ -45,7 +45,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ## Running Playwright Tests
 
-Run the following command in CLI Terminal
+Run the following command in CLI Terminal, if prompted to install Playwright libraries accept the suggested installation.
+
 **--headed** parameter is added to see tests executed, to run in headless mode (Playwright default) remove this from the command below.
 
 ```
