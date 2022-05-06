@@ -9,7 +9,7 @@ Ember.js Super Rentals official tutorial updated with Playwright Test Framework 
 * SuperRentals renamed into MagicCastles
 * Mascot Hamster(?) Tomster is now Eddie (cute vegetarian vampire) #teamedward
 
-![Screenshot](magic-castles-screenshot.png)
+![Screenshot](magic-castles-screenshot-full.png)
 
 ## Prerequisites
 
