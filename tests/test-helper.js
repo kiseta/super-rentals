@@ -1,3 +1,4 @@
+import emberPlaySetup from 'ember-play';
 import Application from 'super-rentals/app';
 import config from 'super-rentals/config/environment';
 import * as QUnit from 'qunit';
@@ -10,3 +11,5 @@ setApplication(Application.create(config.APP));
 setup(QUnit.assert);
 
 start();
+
+emberPlaySetup();
