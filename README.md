@@ -85,7 +85,7 @@ Update Mapbox token in config/enfironment.js
 ```
 ember server
 ```
-### To statrt QUnit Ember test server
+### To start the test server (QUnit)
 
 ```
 ember test server
