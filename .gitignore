@@ -6,9 +6,9 @@
 
 # dependencies
 /bower_components/
-/node_modules/
+node_modules/
 /playwright-report/
-/config/environment.js
+config/environment.js
 
 # misc
 /.env*
