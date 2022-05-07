@@ -1,13 +1,13 @@
 # super-rentals
 
-Ember.js Super Rentals official tutorial updated with Playwright Test Framework and lovingly renamed into Magic Castles
+Ember.js [Super Rentals official tutorial] (https://guides.emberjs.com/release/tutorial/) updated with Playwright Test Framework and lovingly renamed into Magic Castles
 
 
 # is now Magic Castles
 
 * Added: Playwright Test Framework
 * SuperRentals renamed into MagicCastles
-* Mascot Hamster(?) Tomster is now Eddie (cute vegetarian vampire) #teamedward
+* Mascot hamster(?) Tomster is now Eddie (cute vegetarian vampire) #teamedward
 
 ![Screenshot](magic-castles-screenshot-full.png)
 
@@ -101,7 +101,7 @@ ember play -f
 
 ### to run Playwright test, runs headless by default
 ```
-npx playwright test 
+npx playwright test
 ```
 or headed
 ```
