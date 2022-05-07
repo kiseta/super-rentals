@@ -67,7 +67,9 @@ npx playwright test "example.spec.js" --headed --reporter=html
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Update Mapbox token in config/enfironments.js
+
+* `MAPBOX_ACCESS_TOKEN='YOUR_TOKEN';`
 
 ## Further Reading / Useful Links
 
