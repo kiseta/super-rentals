@@ -455,11 +455,11 @@ p {
 }
 
 .tomster {
-  background: url(../assets/images/welcome-eddie-head-red.png);
+  background: url(../assets/images/welcome-eddie-cape.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 200px;
-  width: 160px;
+  height: 300px;
+  width: 260px;
   position: relative;
   top: -25px;
 }
