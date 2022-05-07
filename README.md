@@ -67,7 +67,7 @@ npx playwright test "example.spec.js" --headed --reporter=html
 
 ### Deploying
 
-Update Mapbox token in config/enfironments.js
+Update Mapbox token in config/enfironment.js
 
 * `MAPBOX_ACCESS_TOKEN='YOUR_TOKEN';`
 
