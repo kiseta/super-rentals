@@ -46,17 +46,17 @@ module('Integration | Component | rentals', function (hooks) {
         {
           id: 'downtown-citadel',
           title: 'Downtown Citadel',
-          owner: 'Violet Beauregarde',
-          city: 'Portland',
+          owner: 'Yedikule Dungeons',
+          city: 'Istanbul',
           location: {
-            lat: 45.5175,
-            lng: -122.6801,
+            lat: 40.9937,
+            lng: 28.9227,
           },
           category: 'Apartment',
           type: 'Community',
           bedrooms: 3,
           image:
-            'https://upload.wikimedia.org/wikipedia/commons/a/ae/Castle_Neuschwanstein.jpg',
+            'https://images.pexels.com/photos/7492125/pexels-photo-7492125.jpeg',
           description:
             'Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet.',
         },
@@ -92,16 +92,22 @@ module('Integration | Component | rentals', function (hooks) {
     assert.dom('.rentals').exists();
     assert.dom('.rentals input').exists();
 
-    await fillIn('.rentals input', 'Downtown');
+    await fillIn('.rentals input', 'Stronghold');
 
     assert.dom('.rentals .results').exists();
     assert.dom('.rentals .results li').exists({ count: 1 });
-    assert.dom('.rentals .results li').containsText('Downtown Citadel');
+    assert.dom('.rentals .results li').containsText('Urban Stronghold');
 
     await fillIn('.rentals input', 'Fortress');
 
     assert.dom('.rentals .results').exists();
     assert.dom('.rentals .results li').exists({ count: 1 });
     assert.dom('.rentals .results li').containsText('Grand Old Fortress');
+
+    await fillIn('.rentals input', 'Citadel');
+
+    assert.dom('.rentals .results').exists();
+    assert.dom('.rentals .results li').exists({ count: 1 });
+    assert.dom('.rentals .results li').containsText('Downtown Citadel');
   });
 });

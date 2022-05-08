@@ -30,7 +30,7 @@
         },
         "category": "Condo",
         "bedrooms": 1,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Hunyad_Castle_TB1.jpg",
+        "image": "https://images.pexels.com/photos/3358880/pexels-photo-3358880.png",
         "description": "A commuters dream. This rental is within walking distance of 2 bus stops and the Metro."
       }
     },
@@ -39,15 +39,15 @@
       "id": "downtown-citadel",
       "attributes": {
         "title": "Downtown Citadel",
-        "owner": "Violet Beauregarde",
-        "city": "Portland",
+        "owner": "Yedikule Dungeons",
+        "city": "Istanbul",
         "location": {
-          "lat": 45.5175,
-          "lng": -122.6801
+          "lat": 40.9937, 
+          "lng": 28.9227
         },
         "category": "Apartment",
         "bedrooms": 3,
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Castle_Neuschwanstein.jpg",
+        "image": "https://images.pexels.com/photos/7492125/pexels-photo-7492125.jpeg",
         "description": "Convenience is at your doorstep with this charming downtown rental. Great restaurants and active night life are within a few feet."
       }
     }

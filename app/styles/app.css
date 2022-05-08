@@ -15,7 +15,7 @@ body,
 h2 {
   font-family: 'Arizonia', serif;
   line-height: 1.5;
-  letter-spacing: 2pt;
+  letter-spacing: 0.5pt;
 }
 h3,
 h4,
@@ -455,13 +455,13 @@ p {
 }
 
 .tomster {
-  background: url(../assets/images/welcome-eddie-cape.png);
+  background: url(../assets/images/eddie-cape.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 300px;
-  width: 260px;
+  height: 317px;
+  width: 209px;
   position: relative;
-  top: -25px;
+  top: -20px;
 }
 
 /* .tomster:hover {
