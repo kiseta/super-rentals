@@ -48,7 +48,7 @@ module.exports = function (environment) {
   }
 
   ENV.MAPBOX_ACCESS_TOKEN =
-    '';
+    'pk.eyJ1Ijoia2lzZXRhIiwiYSI6ImNsMnBtMmRzNjAyNjgzY3J2bG96a2NzdnAifQ.dUVSx6fd1ZxTXnEsYz8BLw';
 
   return ENV;
 };
