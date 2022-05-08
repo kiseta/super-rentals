@@ -5,6 +5,8 @@ Ember.js [Super Rentals official tutorial](https://guides.emberjs.com/release/tu
 
 # is now Magic Castles
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/faf74167-59f1-4cb3-970c-c70f4d73ee79/deploy-status)](https://app.netlify.com/sites/magic-castles/deploys)
+
 * Added: Playwright Test Framework
 * SuperRentals renamed into MagicCastles
 * Mascot hamster(?) Tomster is now Eddie (cute vegetarian vampire) #teamedward

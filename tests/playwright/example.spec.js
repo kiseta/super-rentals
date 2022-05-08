@@ -11,7 +11,7 @@ test.describe('All Tests', () => {
       });
 
     test('Test 01 | Visiting Home Page', async ({ page }) => {
-        
+
         await expect(page.locator('nav')).toHaveClass('menu');
         await expect(page.locator('h1')).toHaveText('MagicCastles');
         await expect(page.locator('h2')).toHaveText('Welcome to Magic Castles!');
@@ -21,8 +21,7 @@ test.describe('All Tests', () => {
     });
 
     test('Test 02 | navigating using the nav-bar', async ({ page }) =>  {
-        // await page.goto(baseUrl);
-        // await expect(page).toHaveURL(baseUrl);
+
         await expect(page.locator('nav')).toHaveClass('menu');
 
         await expect(page.locator('nav a.menu-index')).toHaveText('MagicCastles');
@@ -42,6 +41,10 @@ test.describe('All Tests', () => {
     test('Test 03 | updates the results based on search query', async ({ page }) =>   {
     
         await expect(page.locator('.rentals')).toBeVisible();
+
+        await page
+        // await page.screenshot({ path: './playwright-report/screenshot.png', fullPage: true });
+
         await expect(page.locator('.rentals input')).toBeVisible();
         
         await page.fill('.rentals input', 'Fortress');
